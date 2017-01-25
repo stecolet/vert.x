@@ -1231,7 +1231,7 @@ public class WebsocketTest extends VertxTestBase {
 
   @Test
   public void testInvalidUnmaskedFrameRequest(){
-
+ 
     client = vertx.createHttpClient(new HttpClientOptions().setUnmaskedFrame(true));
     server = vertx.createHttpServer(new HttpServerOptions().setPort(HttpTestBase.DEFAULT_HTTP_PORT));
     server.requestHandler(req -> {
